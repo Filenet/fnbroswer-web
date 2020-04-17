@@ -255,6 +255,190 @@ input:-ms-input-placeholder {
 }
 
 
+/* index */
+
+.superNode>div:nth-child(1) {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 363px;
+    box-sizing: border-box;
+    align-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 28px;
+}
+
+.count {
+    width: 294px;
+    height: 146px;
+    box-shadow: 0px 4px 7px 0px rgba(92, 111, 198, 0.4);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 39px 19px;
+    position: relative;
+    background: #fff;
+    padding-left: 40px;
+}
+
+.icon {
+    position: absolute;
+    width: 67px;
+    height: 67px;
+}
+
+.updateTime {
+    background: url('../images/updateTime.png');
+}
+
+.contractCurrency {
+    background: url('../images/contractCurrency.png');
+}
+
+.globalNodes {
+    background: url('../images/globalNodes.png');
+}
+
+.superNodes {
+    background: url('../images/superNodes.png');
+}
+
+.storageSpace {
+    background: url('../images/storageSpace.png');
+}
+
+.yesterday {
+    background: url('../images/yesterday.png');
+}
+
+.ideal {
+    background: url('../images/ideal.png');
+}
+
+.digging {
+    background: url('../images/digging.png');
+}
+
+.counttitle {
+    font-size: 14px;
+    color: #888B9B;
+    position: absolute;
+    left: 122px;
+    top: 79px;
+}
+
+.num {
+    font-size: 18px;
+    color: #192088;
+    position: absolute;
+    left: 122px;
+    font-weight: 700;
+    top: 46px;
+}
+
+.iconwenhao {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: url('../images/iconwenhao.png');
+    bottom: 4px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.wenhaoshuoming {
+    min-width: 208px;
+    min-height: 95px;
+    background: url('../images/wenhaoshuoming.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 13px;
+    right: -98px;
+    z-index: 9;
+    box-sizing: border-box;
+    padding: 33px 20px 14px 20px;
+    font-size: 12px;
+    color: #888B9B;
+    display: none;
+    /* position: relative; */
+    position: absolute;
+}
+
+.iconwenhao:hover .wenhaoshuoming {
+    display: block;
+}
+
+.superNode>div:nth-child(2) {
+    height: 350px;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.history,
+.map {
+    float: left;
+    width: 595px;
+    height: 350px;
+    box-shadow: 0px 0px 3px 0px rgba(33, 33, 33, 0.3);
+    background: #fff;
+}
+
+.map {
+    margin-left: 10px;
+}
+
+.maptitle {
+    height: 56px;
+    padding-left: 44px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 56px;
+    font-weight: 400;
+    background: url('../images/globalLocation.png') no-repeat 20px center;
+}
+
+.tabtable-contain {
+    box-shadow: 0px 4px 16px 0px rgba(92, 111, 198, 0.2);
+    margin: 0 auto;
+    /* height: 689px; */
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.tabtable {
+    overflow: hidden;
+}
+
+.tabtable li {
+    float: left;
+    width: 161px;
+    height: 44px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 2px solid rgba(247, 248, 248, 1);
+    cursor: pointer;
+}
+
+.tabtable li:hover,
+.tabtable li.actived {
+    border-top: 3px solid #42A0CD;
+    line-height: 39px;
+    color: #42A0CD;
+}
+
+.table-contain {
+    box-shadow: 0px 4px 16px 0px rgba(92, 111, 198, 0.2);
+    margin: 0 auto;
+    /* height: 689px; */
+    box-sizing: border-box;
+    padding: 20px 20px 30px 20px;
+    background: #fff;
+}
+
+
 /* el-table */
 
 .el-table--striped .el-table__body tr.el-table__row--striped td {
