@@ -439,6 +439,74 @@ input:-ms-input-placeholder {
 }
 
 
+/*******packingNodeTable***********/
+
+.packingnodetable {
+    overflow-x: auto;
+}
+
+.allpacking {
+    width: 1200px;
+    box-shadow: 1px 1px 10px #ededed;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    background: #fff;
+}
+
+.allpackingTitle {
+    height: 42px;
+    background-color: #E3F1F8;
+    padding: 0 20px;
+}
+
+.allpackingTitle li {
+    float: left;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.allpackingTitle li:nth-child(1) {
+    width: 31px;
+    margin-right: 11px;
+}
+
+.allpackingTitle li:nth-child(2) {
+    width: 128px;
+}
+
+.allpackingTitle li:nth-child(3) {
+    width: 132px;
+}
+
+.allpackingTitle li:nth-child(4) {
+    width: 120px;
+}
+
+.allpackingTitle li:nth-child(5) {
+    width: 180px;
+}
+
+.allpackingTitle li:nth-child(6) {
+    width: 121px;
+}
+
+.allpackingTitle li:nth-child(7) {
+    width: 123px;
+}
+
+.allpackingTitle li:nth-child(8) {
+    width: 115px;
+}
+
+.allpackingTitle li:nth-child(9) {
+    width: 88px;
+}
+
+.allpackingTitle li:nth-child(10) {
+    width: 32px;
+}
+
+
 /* el-table */
 
 .el-table--striped .el-table__body tr.el-table__row--striped td {

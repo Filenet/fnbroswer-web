@@ -93,8 +93,6 @@ import '../../node_modules/echarts/map/js/world.js'
 export default {
     data() {
         return {
-            a: 0,
-            b: 0,
             address: "",
             time: "",
             ismiwen: true,
