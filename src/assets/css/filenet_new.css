@@ -1,0 +1,275 @@
+/********** common *************/
+
+@charset "utf-8";
+@font-face {
+    font-family: 'helvetica';
+    src: url('../fonts/helvetica-condensed.ttf');
+}
+
+[v-cloak] {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'helvetica', Helvetica, Arial, sans-serif;
+}
+
+img {
+    border: 0;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background: #F5F9FD;
+}
+
+.container-1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-1920 {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.orange {
+    color: #f26519;
+}
+
+.blue {
+    color: #687dd8 !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.green {
+    color: #50903e !important;
+}
+
+.no-show {
+    display: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #c9c9c9 !important;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #c9c9c9 !important;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #c9c9c9 !important;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #c9c9c9 !important;
+}
+
+
+/* header */
+
+.navbar {
+    min-height: 80px;
+    border: none;
+}
+
+.navbar a {
+    color: #262626;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand>img {
+    display: inline-block;
+}
+
+.navbar .navbar-brand>span {
+    display: inline-block;
+    font-size: 30px;
+    color: #687dd8;
+    padding-top: 5px;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-style: oblique;
+}
+
+.navbar-toggle {
+    background-color: #eee;
+    color: #333;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #e4353c;
+}
+
+.navbar-header a {
+    line-height: 80px;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    font-family: '微软雅黑';
+    position: relative;
+}
+
+.navbar-header>a {
+    display: block;
+    float: left;
+    white-space: nowrap;
+}
+
+.firstlink {
+    margin-left: 50px;
+    position: relative;
+}
+
+.firstlink.index,
+.firstlink .actived {
+    color: #42A0CD;
+}
+
+.firstlink.index::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    background-color: #42A0CD;
+    top: 54px;
+    left: 15%;
+}
+
+.search {
+    float: right;
+    margin-top: 19px;
+}
+
+.search>div {
+    float: left;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+}
+
+.search input {
+    padding: 0;
+    padding: 0 25px;
+    margin-top: 5px;
+    background-color: white;
+    width: 450px;
+    height: 35px;
+    outline: none;
+    border: none;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 12px;
+}
+
+.btnsearch {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    outline: none;
+    width: 60px;
+    height: 35px;
+    background-color: white;
+    /* padding-right: 10px; */
+    padding-left: 14px;
+    float: left;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.language {
+    font-family: "微软雅黑";
+    color: white;
+    width: 100px;
+    height: 44px;
+    margin-left: 15px;
+}
+
+.language>div {
+    width: 110px;
+    height: 44px;
+    /* background-color: #1C2340; */
+    position: relative;
+    line-height: 44px;
+    padding-left: 10px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.language div:nth-child(2) {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 10px 0px rgba(39, 45, 71, 0.19);
+    border-radius: 10px;
+    color: #333;
+}
+
+.hover>div:nth-child(2):hover {
+    color: #42A0CD;
+}
+
+.language img {
+    width: 35px;
+    vertical-align: middle;
+}
+
+
+/* el-table */
+
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+    background-color: #ecedf5;
+}
+
+.supernodetable .el-table__body tr.el-table__row--striped td {
+    background-color: #fff;
+}
+
+@media (min-width: 1200px) {
+    .firstlink {
+        margin-left: 50px;
+    }
+    .search input {
+        width: 260px
+    }
+}
