@@ -9,8 +9,12 @@ Vue.prototype.$axios = axios
 
 const filenet_search = () =>
     import ( /* webpackChunkName: "filenet_packagingnode_info" */ '../components/filenet_search.vue');
+
 const packagingNodeTable = () =>
     import ( /* webpackChunkName: "packagingNodeTable" */ '../components/index/packingNodeTable.vue');
+
+const newBlockTable = () =>
+    import ( /* webpackChunkName: "newBlockTable" */ '../components/index/newBlockTable.vue');
 const router = new VueRouter({
     mode: 'hash',
     routes: [{
@@ -23,6 +27,14 @@ const router = new VueRouter({
                 path: 'packagingNodeTable',
                 name: 'packagingNodeTable',
                 component: packagingNodeTable,
+                meta: {
+                    title: 'Search',
+                }
+            },
+            {
+                path: 'newBlockTable',
+                name: 'newBlockTable',
+                component: newBlockTable,
                 meta: {
                     title: 'Search',
                 }

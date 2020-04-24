@@ -780,6 +780,93 @@ span.vote .qrcode img {
     display: none;
 }
 
+.newblocktable {
+    overflow-x: auto;
+}
+
+.allblock {
+    width: 1200px;
+    overflow: auto;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px #ededed;
+}
+
+.allBlockTitle {
+    height: 42px;
+    background-color: #E3F1F8;
+    padding: 0 30px;
+}
+
+.allBlockTitle li {
+    float: left;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.allBlockTitle li:nth-child(1) {
+    width: 110px;
+}
+
+.allBlockTitle li:nth-child(2) {
+    width: 220px;
+}
+
+.allBlockTitle li:nth-child(3) {
+    width: 110px;
+}
+
+.allBlockTitle li:nth-child(4) {
+    width: 550px;
+}
+
+.allBlockTitle li:nth-child(5) {
+    width: 110px;
+}
+
+.newblocktable .lili:nth-child(even),
+.transfertable .lili:nth-child(even) {
+    background: #EFF5FF;
+}
+
+.superNode .lili:first-child {
+    margin-top: 0;
+}
+
+.allBlockTable>.lili span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.allBlockTable>.lili span:nth-child(1) {
+    width: 110px;
+    margin-left: 30px;
+}
+
+.allBlockTable>.lili span:nth-child(2) {
+    width: 220px;
+}
+
+.allBlockTable>.lili span:nth-child(3) {
+    width: 110px;
+}
+
+.allBlockTable>.lili span:nth-child(4) {
+    width: 550px;
+}
+
+.allBlockTable>.lili span:nth-child(5) {
+    width: 110px;
+}
+
+.allblock {
+    box-shadow: 1px 1px 10px #ededed;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    background: #fff;
+}
+
 
 /************** footer ***************/
 

@@ -271,6 +271,11 @@ export default {
                 ]
             }, true);
         },
+        toTable(str) {
+            this.showTable = str
+            localStorage.setItem('showTable', str)
+            this.$router.push({ path: str, query: {} })
+        },
     },
 };
 </script>
