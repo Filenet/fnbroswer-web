@@ -143,6 +143,134 @@ export default {
         this.lang = localStorage.getItem('language')
     },
     methods: {
+        isfirstFn(event) {
+            this.isfirst = true
+        },
+        history() {
+            let myHistory = echarts.init(document.getElementById('history'))
+            let data = this.splitData(this.historyData);
+            // console.log(data)
+            myHistory.setOption({
+                backgroundColor: '#fff',
+                animation: false,
+                title: { 
+                    text: '7 day FN Price History(USD)',
+                    left: '2%',
+                    top: 16,
+                    textStyle: {
+                        fontWeight: 400,
+                        fontSize: 16
+                    }
+                },
+                // hover
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'cross'
+                    },
+                    formatter: (params) => {
+                        // console.log(params)
+                        return '<span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#42A0CD;"></span><b>' +
+                            params[0].seriesName + '</b><br><span style="font-size:12px">' +
+                            params[0].dimensionNames[1] + ': ' + params[0].value[1] + '<br>' +
+                            params[0].dimensionNames[4] + ': ' + params[0].value[4] + '<br>' +
+                            params[0].dimensionNames[3] + ': ' + params[0].value[3] + '<br>' +
+                            params[0].dimensionNames[2] + ': ' + params[0].value[2] + '</span>'
+
+                    },
+                    backgroundColor: 'rgba(245, 245, 245, 0.8)',
+                    borderWidth: 1,
+                    borderColor: '#42A0CD',
+                    padding: 10,
+                    textStyle: {
+                        color: '#000'
+                    },
+                    extraCssText: 'width: 120px'
+                },
+                axisPointer: {
+                    link: { xAxisIndex: 'all' },
+                    label: {
+                        backgroundColor: '#fff',
+                        color: 'black',
+                        borderWidth: 1,
+                        borderColor: '#42A0CD',
+                    }
+                },
+                grid: [
+                    {
+                        left: '6%',
+                        right: '10%',
+                        bottom: '8%'
+                    }
+                ],
+                xAxis: [
+                    {
+                        type: 'category',
+                        data: data.categoryData,
+                        scale: true,
+                        axisTick: {
+                            alignWithLabel: true
+                        },
+                        axisLine: { onZero: false },
+                        axisLabel: {
+                            interval: 11,
+                            formatter: (function (params) {
+                                // console.log(params)
+                                return this.formatterTime(params, 'axis')
+                            }).bind(this),
+                        },
+                        splitLine: { show: false },
+                        splitNumber: 11,
+                        min: 0,
+                        max: 83,
+                        axisPointer: {
+                            z: 100,
+                            label: {
+                                backgroundColor: '#F8F8F8',
+                                color: '#333',
+                                borderWidth: 1,
+                                borderColor: '#000',
+                                formatter: (function (params) {
+                                    // console.log(params)
+                                    return this.formatterTime(params.value, 'axisPointer')
+                                }).bind(this),
+                            }
+                        },
+                    }
+                ],
+                yAxis: [
+                    {
+                        position: 'right',
+                        type: 'value',
+                        scale: true,
+                        splitArea: {
+                            show: false
+                        },
+                        axisTick: { show: false },
+                        axisLine: { show: false },
+                    }
+                ],
+                series: [
+                    {
+                        name: 'FN price',
+                        type: 'custom',
+                        renderItem: this.renderItem,
+                        dimensions: [null, 'Open', 'Close', 'Low', 'High'],
+                        encode: {
+                            x: 0,
+                            y: [1, 2, 3, 4],
+                            tooltip: [1, 4, 3, 2]
+                        },
+                        data: data.values,
+                        itemStyle: {
+                            normal: {
+                                color: '#42A0CD',
+                            }
+                        }
+                    },
+                ]
+            }, true);
+        },
     },
 };
 </script>
