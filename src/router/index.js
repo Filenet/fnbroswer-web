@@ -15,6 +15,9 @@ const packagingNodeTable = () =>
 
 const newBlockTable = () =>
     import ( /* webpackChunkName: "newBlockTable" */ '../components/index/newBlockTable.vue');
+
+const transferTable = () =>
+    import ( /* webpackChunkName: "transferTable" */ '../components/index/transferTable.vue');
 const router = new VueRouter({
     mode: 'hash',
     routes: [{
@@ -39,6 +42,14 @@ const router = new VueRouter({
                     title: 'Search',
                 }
             },
+            {
+                path: 'transferTable',
+                name: 'transferTable',
+                component: transferTable,
+                meta: {
+                    title: 'Search',
+                }
+            }
         ]
     }, ]
 })
