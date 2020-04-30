@@ -18,40 +18,51 @@ const newBlockTable = () =>
 
 const transferTable = () =>
     import ( /* webpackChunkName: "transferTable" */ '../components/index/transferTable.vue');
+
+
+
+const filenet_packagingnode_info = () =>
+    import ( /* webpackChunkName: "filenet_packagingnode_info" */ '../components/filenet_packingnode_info.vue');
 const router = new VueRouter({
     mode: 'hash',
     routes: [{
-        path: '/',
-        name: 'filenet_search',
-        component: filenet_search,
-        children: [
-            { path: '', redirect: 'packagingNodeTable' },
-            {
-                path: 'packagingNodeTable',
-                name: 'packagingNodeTable',
-                component: packagingNodeTable,
-                meta: {
-                    title: 'Search',
+            path: '/',
+            name: 'filenet_search',
+            component: filenet_search,
+            children: [
+                { path: '', redirect: 'packagingNodeTable' },
+                {
+                    path: 'packagingNodeTable',
+                    name: 'packagingNodeTable',
+                    component: packagingNodeTable,
+                    meta: {
+                        title: 'Search',
+                    }
+                },
+                {
+                    path: 'newBlockTable',
+                    name: 'newBlockTable',
+                    component: newBlockTable,
+                    meta: {
+                        title: 'Search',
+                    }
+                },
+                {
+                    path: 'transferTable',
+                    name: 'transferTable',
+                    component: transferTable,
+                    meta: {
+                        title: 'Search',
+                    }
                 }
-            },
-            {
-                path: 'newBlockTable',
-                name: 'newBlockTable',
-                component: newBlockTable,
-                meta: {
-                    title: 'Search',
-                }
-            },
-            {
-                path: 'transferTable',
-                name: 'transferTable',
-                component: transferTable,
-                meta: {
-                    title: 'Search',
-                }
-            }
-        ]
-    }, ]
+            ]
+        },
+        {
+            path: '/filenet_packagingnode_info',
+            name: 'filenet_packagingnode_info',
+            component: filenet_packagingnode_info,
+        }
+    ]
 })
 
 

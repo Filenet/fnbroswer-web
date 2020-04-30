@@ -985,6 +985,52 @@ span.vote .qrcode img {
     position: relative;
 }
 
+.blocktable>div {
+    width: 1200px;
+}
+
+.nav>li>a {
+    padding: 34px 30px;
+}
+
+.nav-RUS>li>a {
+    padding: 34px 30px;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    background-color: transparent;
+    border-color: #337ab7;
+}
+
+.nav {
+    box-sizing: border-box;
+    background: rgba(66, 160, 205, 0.15);
+}
+
+.nav a {
+    width: 150px;
+    line-height: 42px;
+    color: #666666;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.nav a.router-link-active {
+    color: #42A0CD;
+    border-bottom: 2px solid #42A0CD;
+}
+
 
 /* el-table */
 

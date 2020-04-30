@@ -71,7 +71,7 @@
                         <span >
                             <img  :src="require(`../../assets/images/${(info.location)+'.png'}`)" style="width:25px;height:16px;margin-right:10px"><span>{{info.location}}</span>
                         </span>
-                        <span class="canclick short long">
+                        <span class="canclick short long" @click="toPackingnodeDetail(info.address,info.no,info.url,info.name,info.english,info.rank)">
                             {{common.middleEllipsisLong(info.address)}}
                             <i @click="prevent">{{info.address}}</i>
                         </span>
@@ -89,7 +89,7 @@
                             <!-- ... -->
                         </span>
                         <span class='vote'>
-                            <a href="javascript:;" >{{$t('vote')}}
+                            <a href="javascript:;" @click="toPackingnodeDetail(info.address,info.no,info.url,info.name,info.english,info.rank)">{{$t('vote')}}>{{$t('vote')}}
                                 <div class="qrcode">
                                     <img :src="info.src" alt="">
                                 </div>
@@ -254,6 +254,9 @@ export default {
         nextPage() {
             this.current_page++
             this.jumpPage(this.current_page)
+        },
+        toPackingnodeDetail(value,info,imgUrl,name,english,rank) {
+            this.$router.push({ path: '/filenet_packagingnode_info', query: { search: value,info,imgUrl,name,english,Rank:rank} })
         },
     },
     created() {
