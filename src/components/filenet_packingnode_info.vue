@@ -104,9 +104,7 @@
         },
         methods: {
             switchTab(str, index) {
-                
-                localStorage.setItem('packingnode_tab_index', index)
-                    
+                localStorage.setItem('packingnode_tab_index', index)    
                 this.$router.push({
                     path: str,
                     query: {

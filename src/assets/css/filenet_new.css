@@ -1042,6 +1042,14 @@ span.vote .qrcode img {
     background-color: #fff;
 }
 
+.lili {
+    height: 46px;
+}
+
+.lili:first-child {
+    margin-top: 26px;
+}
+
 @media (min-width: 1200px) {
     .firstlink {
         margin-left: 50px;

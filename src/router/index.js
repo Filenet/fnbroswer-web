@@ -23,6 +23,10 @@ const transferTable = () =>
 
 const filenet_packagingnode_info = () =>
     import ( /* webpackChunkName: "filenet_packagingnode_info" */ '../components/filenet_packingnode_info.vue');
+
+const vote = () =>
+    import ( /* webpackChunkName: "vote" */ '../components/packingnode/vote.vue');
+
 const router = new VueRouter({
     mode: 'hash',
     routes: [{
@@ -61,6 +65,16 @@ const router = new VueRouter({
             path: '/filenet_packagingnode_info',
             name: 'filenet_packagingnode_info',
             component: filenet_packagingnode_info,
+            children: [
+                { path: '', redirect: 'vote' },
+                {
+                    path: 'vote',
+                    component: vote,
+                    meta: {
+                        title: 'Wallet Address'
+                    }
+                },
+            ]
         }
     ]
 })
