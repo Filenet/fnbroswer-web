@@ -27,6 +27,16 @@ const filenet_packagingnode_info = () =>
 const vote = () =>
     import ( /* webpackChunkName: "vote" */ '../components/packingnode/vote.vue');
 
+const statistics = () =>
+    import ( /* webpackChunkName: "statistics" */ '../components/packingnode/statistics.vue');
+
+
+
+
+const addBlock = () =>
+    import ( /* webpackChunkName: "addBlock" */ '../components/address/addBlock.vue');
+
+
 const router = new VueRouter({
     mode: 'hash',
     routes: [{
@@ -70,6 +80,20 @@ const router = new VueRouter({
                 {
                     path: 'vote',
                     component: vote,
+                    meta: {
+                        title: 'Wallet Address'
+                    }
+                },
+                {
+                    path: 'addBlock',
+                    component: addBlock,
+                    meta: {
+                        title: 'Wallet Address'
+                    }
+                },
+                {
+                    path: 'statistics',
+                    component: statistics,
                     meta: {
                         title: 'Wallet Address'
                     }

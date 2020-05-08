@@ -1050,6 +1050,60 @@ span.vote .qrcode img {
     margin-top: 26px;
 }
 
+
+/* addblock */
+
+.addblocktitle {
+    height: 50px;
+    background-color: #EFF5FF;
+    color: #888888
+}
+
+.addblocktitle li {
+    float: left;
+    line-height: 50px;
+    width: 190px;
+    padding: 0 20px;
+}
+
+.addblocktitle li:nth-child(4) {
+    width: 235px;
+}
+
+.addblocktitle li:nth-child(5) {
+    width: 235px;
+}
+
+.addblocktitle li:nth-child(6) {
+    width: 100px;
+}
+
+
+/* .addblocktable {} */
+
+.addblocktable>.lili span {
+    float: left;
+    width: 190px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.addblocktable .short i {
+    top: 40px;
+}
+
+.addblocktable>.lili span:nth-child(4) {
+    width: 235px;
+}
+
+.addblocktable>.lili span:nth-child(5) {
+    width: 235px;
+}
+
+.addblocktable>.lili span:nth-child(6) {
+    width: 100px;
+}
+
 @media (min-width: 1200px) {
     .firstlink {
         margin-left: 50px;
