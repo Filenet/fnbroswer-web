@@ -33,6 +33,10 @@ const statistics = () =>
 
 
 
+
+const addTransfers = () =>
+    import ( /* webpackChunkName: "addTransfers" */ '../components/address/addTransfers.vue');
+
 const addBlock = () =>
     import ( /* webpackChunkName: "addBlock" */ '../components/address/addBlock.vue');
 
