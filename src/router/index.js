@@ -37,6 +37,10 @@ const addBlock = () =>
     import ( /* webpackChunkName: "addBlock" */ '../components/address/addBlock.vue');
 
 
+//detail
+const contarctDetail = () =>
+    import ( /* webpackChunkName: "contarctDetail" */ '../components/detail/contarctDetail.vue');
+
 const router = new VueRouter({
     mode: 'hash',
     routes: [{
@@ -99,7 +103,15 @@ const router = new VueRouter({
                     }
                 },
             ]
-        }
+        },
+        {
+            path: '/contarctDetail',
+            name: 'contarctDetail',
+            component: contarctDetail,
+            meta: {
+                title: 'Detail'
+            }
+        },
     ]
 })
 

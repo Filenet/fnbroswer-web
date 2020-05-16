@@ -1104,6 +1104,108 @@ span.vote .qrcode img {
     width: 100px;
 }
 
+.cbs {
+    margin-bottom: 14px;
+}
+
+.addhash {
+    height: 44px;
+    display: flex;
+    padding: 0 30px 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    background: #EFF5FF;
+}
+
+.cssBorderContanier {
+    border: 1px solid rgba(204, 204, 204, 0);
+}
+
+.cssBorderContanier:hover {
+    border: 1px solid rgba(204, 204, 204, 1);
+}
+
+.addhash span:nth-child(2) {
+    font-style: italic;
+    color: #999999;
+}
+
+.addtable {
+    padding: 20px 50px 19px 50px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addtableright {
+    position: relative;
+}
+
+.addtableright>div {
+    width: 540px;
+    /* display: flex; */
+}
+
+.addtableright>div>div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.addtableright>div:nth-child(2)>.from {
+    float: right;
+    display: block;
+    padding: 0 15px;
+    line-height: 42px;
+    margin-top: 15px;
+    background-color: #5DB75D;
+    color: white;
+    border-radius: 4px;
+    margin-right: -15px;
+}
+
+.proxystate {
+    float: right;
+    display: block;
+    padding: 0 15px;
+    line-height: 42px;
+    margin-top: 15px;
+    background-color: #297EC6;
+    color: white;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.blockfrom {
+    float: right;
+    display: block;
+    padding: 0 15px;
+    line-height: 42px;
+    margin-top: 15px;
+    background-color: #297EC6;
+    color: white;
+    border-radius: 4px;
+    margin-right: -15px;
+}
+
+.addtableright>div:nth-child(2)>.to {
+    float: right;
+    display: block;
+    padding: 0 15px;
+    line-height: 42px;
+    margin-top: 15px;
+    background-color: #DB2F2C;
+    color: white;
+    border-radius: 4px;
+    margin-right: -15px;
+}
+
+.contribtitle {
+    height: 45px;
+    width: 100%;
+    background-color: #EFF5FF;
+}
+
 @media (min-width: 1200px) {
     .firstlink {
         margin-left: 50px;
