@@ -132,7 +132,14 @@ const router = new VueRouter({
                     meta: {
                         title: 'Wallet Address'
                     }
-                }
+                },
+                {
+                    path: 'addBlock',
+                    component: addBlock,
+                    meta: {
+                        title: 'Wallet Address'
+                    }
+                },
             ]
         },
         {
