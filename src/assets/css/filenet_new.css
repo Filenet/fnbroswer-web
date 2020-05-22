@@ -1200,10 +1200,78 @@ span.vote .qrcode img {
     margin-right: -15px;
 }
 
+.xuanzhuan {
+    animation: zhuan 1s infinite;
+}
+
+.cbs {
+    margin-bottom: 14px;
+}
+
+@media (min-width:768px) {
+    .contrisdetail {
+        height: 290px;
+    }
+}
+
 .contribtitle {
     height: 45px;
     width: 100%;
     background-color: #EFF5FF;
+}
+
+.contribtitle>ul li {
+    float: left;
+    line-height: 45px;
+}
+
+.contribtitle>ul li:nth-child(1) {
+    width: 440px;
+    margin-left: 30px;
+}
+
+.contribtitle>ul li:nth-child(2) {
+    width: 230px;
+    margin-left: 180px;
+}
+
+.contribtitle>ul li:nth-child(3) {
+    width: 150px;
+    margin-left: 100px;
+}
+
+.addContable>.lili span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.addContable>.lili span:nth-child(1) {
+    width: 440px;
+    margin-left: 30px;
+}
+
+.addContable>.lili span:nth-child(2) {
+    width: 230px;
+    margin-left: 180px;
+}
+
+.addContable>.lili span:nth-child(3) {
+    width: 150px;
+    margin-left: 100px;
+}
+
+
+/* table */
+
+span.canclick {
+    color: #42A0CD;
+    cursor: pointer;
+}
+
+span.canclick:hover {
+    text-decoration: underline;
 }
 
 @media (min-width: 1200px) {
