@@ -198,6 +198,13 @@ module.exports = {
     Contractduration: 'Contract duration',
     credit: 'credit',
     currentstate: 'current state',
+    agentLock: 'Agency contract votes',
+    approve: 'Approve',
+    ownLock: 'Own contract votes',
+    totalLock: 'Total contract votes',
+    contracthash: 'Contract Hash',
+    EaterAddress: 'Eater Address',
+    burned: 'Burned',
     // addContribs
     contribminer: 'Miner',
     contribsupernode: 'Super Node',

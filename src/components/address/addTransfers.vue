@@ -64,8 +64,62 @@ export default {
             nowIndex:0,
             search:"",
             pageSize:10,
-            addTransData:[],
-            showloading:true,
+            addTransData:[
+                {
+                    txid: "7a65f5d16b673936da4f7a32ee6940e0ab12f1e48ca5310aeb5801b3a69d9083",
+                    from: "3qtWXuyRGq7CeuvyiX95gN91crYAS3MYWdnMnb7Aso6AZUALXsyvpsy",
+                    tocount: 1,
+                    value: 2000000000000,
+                    timestamp: 1589634719,
+                    height: 4535930,
+                    transferDetails: [
+                        {   d: 388655,
+                            txid: "7a65f5d16b673936da4f7a32ee6940e0ab12f1e48ca5310aeb5801b3a69d9083",
+                            to: "65WR6VZRzPCjG5KRydt951Bd5N3L4s2yrioAJsACeCyFZ2csDX8PSEV",
+                            value: 2000000000000,
+                        }
+                    ],
+                    id: 388655,
+                    txid: "7a65f5d16b673936da4f7a32ee6940e0ab12f1e48ca5310aeb5801b3a69d9083",
+                    to: "65WR6VZRzPCjG5KRydt951Bd5N3L4s2yrioAJsACeCyFZ2csDX8PSEV",
+                    value: 2000000000000,
+                },
+                {
+                    txid: "7a65f5d16b673936da4f7a32ee6940e0ab12f1e48ca5310aeb5801b3a69d9083",
+                    from: "3qtWXuyRGq7CeuvyiX95gN91crYAS3MYWdnMnb7Aso6AZUALXsyvpsy",
+                    tocount: 1,
+                    value: 2000000000000,
+                    timestamp: 1589634719,
+                    height: 4535930,
+                    transferDetails: [
+                        {   d: 388655,
+                            txid: "7a65f5d16b673936da4f7a32ee6940e0ab12f1e48ca5310aeb5801b3a69d9083",
+                            to: "65WR6VZRzPCjG5KRydt951Bd5N3L4s2yrioAJsACeCyFZ2csDX8PSEV",
+                            value: 2000000000000,
+                        }
+                    ],
+                    id: 388655,
+                    txid: "7a65f5d16b673936da4f7a32ee6940e0ab12f1e48ca5310aeb5801b3a69d9083",
+                    to: "65WR6VZRzPCjG5KRydt951Bd5N3L4s2yrioAJsACeCyFZ2csDX8PSEV",
+                    value: 2000000000000,
+                },
+                {
+                    txid: "1541637e3c2b4e0835a715a491590ea66a2dd66e80e4225d78c6523ec8fdaff2",
+                    from: "65WR6VZRzPCjG5KRydt951Bd5N3L4s2yrioAJsACeCyFZ2csDX8PSEV",
+                    tocount: 1,
+                    value: 2000000000000,
+                    timestamp: 1589633204,
+                    height: 4535778,
+                    transferDetails: [
+                        {   id: 388629,
+                            txid: "1541637e3c2b4e0835a715a491590ea66a2dd66e80e4225d78c6523ec8fdaff2",
+                            to: "3YcwtUzUEu8GGCXHGYohWuAmtnFvBgVoH8RnaJnrLyf2zZ358QhoMpZ",
+                            value: 2000000000000
+                        }
+                    ]
+                }
+            ],
+            showloading:false,
             content: `Current address has no transaction data！`,
             showcontent:false
         }

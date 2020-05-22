@@ -197,6 +197,13 @@ module.exports = {
     Contractduration: '合约期限',
     credit: '信用度系数',
     currentstate: '当前状态',
+    agentLock: '代理合约票数',
+    approve: '授权金额',
+    ownLock: '自有合约票数',
+    totalLock: '总合约票数',
+    contracthash: '合约哈希',
+    EaterAddress: '黑洞地址',
+    burned: '已销毁',
     // addContribs
     contribminer: '矿工贡献',
     contribsupernode: '超级节点贡献',

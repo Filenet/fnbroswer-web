@@ -14,19 +14,19 @@
             <div class="lili" v-for="(item,index) in voteData" :key="index">
                 <span class="canclick short" @click="toProxyDetail(item.txid)">
                     {{common.middleEllipsis(item.txid)}}
-                    <i>{{item.txid}}</i>
+                    1<i>{{item.txid}}</i>
                 </span>
                 <span>
                     {{common.formatTime(item.timestamp)}}
                 </span>
                 <span class="canclick short" @click="toAddress(item.from)">
                     {{common.middleEllipsis(item.from)}}
-                    <i>{{item.from}}</i>
+                   2 <i>{{item.from}}</i>
                 </span>
                 <span style="">- ></span>
                 <span class="canclick short" @click="toAddress(item.to)">
                     {{common.middleEllipsis(item.to)}}
-                    <i>{{item.to}}</i>
+                   3 <i>{{item.to}}</i>
                 </span>
                 <span>
                     {{common.reward(item.value)}} FN

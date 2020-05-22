@@ -33,6 +33,8 @@ const statistics = () =>
 
 
 
+const filenet_address_search = () =>
+    import ( /* webpackChunkName: "filenet_address_search" */ '../components/filenet_address_search.vue');
 
 const addTransfers = () =>
     import ( /* webpackChunkName: "addTransfers" */ '../components/address/addTransfers.vue');
@@ -102,6 +104,22 @@ const router = new VueRouter({
                 {
                     path: 'statistics',
                     component: statistics,
+                    meta: {
+                        title: 'Wallet Address'
+                    }
+                },
+            ]
+        },
+        {
+
+            path: '/filenet_address_search',
+            name: 'filenet_address_search',
+            component: filenet_address_search,
+            children: [
+                { path: '', redirect: 'addTransfers' },
+                {
+                    path: 'addTransfers',
+                    component: addTransfers,
                     meta: {
                         title: 'Wallet Address'
                     }
